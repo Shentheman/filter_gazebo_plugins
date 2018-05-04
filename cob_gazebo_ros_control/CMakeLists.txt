@@ -11,6 +11,7 @@ catkin_package(
   INCLUDE_DIRS include
   LIBRARIES hwi_switch_gazebo_ros_control hwi_switch_robot_hw_sim
 )
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
 
 ### BUILD ###
 include_directories(include ${catkin_INCLUDE_DIRS} ${GAZEBO_INCLUDE_DIRS})
